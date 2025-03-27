@@ -14,7 +14,7 @@ interface NewTransactionModalProps{
 
 
 export function NewTransactionModal ({isOpen, onRequestClose}:NewTransactionModalProps) {
-  const [type,setType] = useState('deposit')
+  const [type, setType] = useState('deposit');
   return (
     <Modal
         isOpen={isOpen}
@@ -46,7 +46,7 @@ export function NewTransactionModal ({isOpen, onRequestClose}:NewTransactionModa
           <TransactionTypeContainer>
             <RadioBox
             type="button"
-            onClick={() =>  { setType('deposit');}}
+            onClick={() =>  { setType('deposit'); }}
             isActive ={type === 'deposit'}
 
             >
