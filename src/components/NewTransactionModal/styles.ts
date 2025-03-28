@@ -85,7 +85,9 @@ export const RadioBox = styled.button<RadioBoxProps>`
     width: 20px;
     height: 20px;
   }
-
+  &:hover {
+    border-color: ${darken(0.1,'#d7d7d7')};
+  }
   span {
     display: inline-block;
     margin-left: 1rem;
