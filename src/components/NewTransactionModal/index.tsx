@@ -15,7 +15,7 @@ interface NewTransactionModalProps{
 
 
 export function NewTransactionModal ({isOpen, onRequestClose}:NewTransactionModalProps) {
-  const [tittle, setTittle]= useState('');
+  const [title, setTittle]= useState('');
   const [value, setValue]= useState(0);
   const [category, setCategory]= useState('');
   const [type, setType] = useState('deposit');
@@ -25,7 +25,7 @@ export function NewTransactionModal ({isOpen, onRequestClose}:NewTransactionModa
  
    
     const data = {
-      tittle,
+      title,
       value,
       category,
       type,
@@ -53,7 +53,7 @@ export function NewTransactionModal ({isOpen, onRequestClose}:NewTransactionModa
           <h2>Cadastrar Transação</h2> 
           <input 
           placeholder="Título" 
-          value={tittle}
+          value={title}
           onChange={event => setTittle(event.target.value)}
           />
 
